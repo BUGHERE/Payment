@@ -1,5 +1,9 @@
 server:
   port: 8090
+
 spring:
   application:
     name: Payment
+  jackson:  # 定义数据返回格式
+    date-format: yyyy-MM-dd HH:mm:ss  # 时间格式
+    time-zone: GMT+8  # 时间区域

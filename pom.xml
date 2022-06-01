@@ -22,7 +22,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--Swagger-->
+        <!--Swagger--><!--测试文档-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -35,6 +35,12 @@
             <version>2.7.0</version>
         </dependency>
 
+        <!--lombok--><!--使用注解自动生成get、set方法、构造函数等-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version><!--似乎IDEA2020.3必须指定老一点的版本才行-->
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

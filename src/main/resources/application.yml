@@ -7,3 +7,9 @@ spring:
   jackson:  # 定义数据返回格式
     date-format: yyyy-MM-dd HH:mm:ss  # 时间格式
     time-zone: GMT+8  # 时间区域
+  datasource:  # mysql connection
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/payment?serverTimeZone=GMT%2B8&characterEncoding=utf-8
+    username: root
+    password: 123456

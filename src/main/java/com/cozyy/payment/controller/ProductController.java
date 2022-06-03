@@ -39,6 +39,7 @@ public class ProductController {
     @Resource
     private ProductService productService;
 
+    @ApiOperation("商品列表")
     @GetMapping("/list")
     public R list() {
         List<Product> list = productService.list();

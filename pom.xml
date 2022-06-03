@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-<!--            <artifactId>spring-boot-starter</artifactId>-->
+            <!--            <artifactId>spring-boot-starter</artifactId>-->
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
@@ -46,7 +46,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-<!--            <version>8.0.25</version>-->
+            <!--            <version>8.0.25</version>-->
             <version>5.1.49</version>
         </dependency>
 
@@ -83,6 +83,17 @@
     </dependencyManagement>
 
     <build>
+        <!-- 项目打包时会将java目录中的*.xml文件也进行打包 -->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
